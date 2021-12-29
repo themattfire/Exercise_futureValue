@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futur. Your future value</title>
+</head>
+
+<body>
+  <header class="headerFutur">
+    <h1 class="headerFutur__logo">Futur</h1>
+  </header>
+  <div class="futurContainer">
+    <div class="futurContainer__investment">
+      <label for="investment">Introduce your investment</label>
+      <input type="number" name="investment" required placeholder="10,000">
+    </div>
+    <div class="futurContainer__period">
+      <label for="period">Introduce the period of time</label>
+      <input type="number" name="period" required placeholder="12">
+      <p class="futurContainer__text period__text">years</p>
+    </div>
+    <div class="futurContainer__interest">
+      <label for="interest">Introduce the interest</label>
+      <input type="number" name="interest" required placeholder="10" max="100" min="1" autocomplete="1">
+      <p class="futurContainer__text period__text">%</p>
+    </div>
+    <div class="futurContainer__results"></div>
+    <button class="futurContainer__btn">Show me my results</button>
+  </div>
+</body>
+
+</html>
