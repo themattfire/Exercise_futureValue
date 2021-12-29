@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Futur. Your future value</title>
 </head>
 
@@ -13,18 +14,24 @@
     <h1 class="headerFutur__logo">Futur</h1>
   </header>
   <div class="futurContainer">
-    <div class="futurContainer__investment">
-      <label for="investment">Introduce your investment</label>
-      <input type="number" name="investment" required placeholder="10,000">
+    <p class="futurContainer__subtitle">Take a look to your <span
+        class="futurContainer__subtitle-span futurContainer__subtitle">Futur</span> and
+      get to know the results of your
+      investment</p>
+    <div class="futurContainer__investment futurContainer__input">
+      <label for="investment" class="futurContainer__text">Introduce your investment</label>
+      <input type=" number" name="investment" required placeholder="10,000" class="futurContainer__text input__box">
     </div>
-    <div class="futurContainer__period">
-      <label for="period">Introduce the period of time</label>
-      <input type="number" name="period" required placeholder="12">
+    <div class="futurContainer__period futurContainer__input">
+      <label for="period" class="futurContainer__text">Introduce the period of time</label>
+      <input type=" number" name="period" required placeholder="12"
+        class="futurContainer__text input__box input__period">
       <p class="futurContainer__text period__text">years</p>
     </div>
-    <div class="futurContainer__interest">
-      <label for="interest">Introduce the interest</label>
-      <input type="number" name="interest" required placeholder="10" max="100" min="1" autocomplete="1">
+    <div class="futurContainer__interest futurContainer__input">
+      <label for="interest" class="futurContainer__text">Introduce the interest</label>
+      <input type=" number" name="interest" required placeholder="10" max="100" min="1" autocomplete="1"
+        class="futurContainer__text input__box input__interest">
       <p class="futurContainer__text period__text">%</p>
     </div>
     <div class="futurContainer__results"></div>
