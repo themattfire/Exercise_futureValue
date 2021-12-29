@@ -1,0 +1,81 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerFutur {
+  background-color: #f2f2f2;
+  height: 150px;
+  display: flex;
+  align-content: center;
+}
+
+.headerFutur__logo {
+  margin: auto 100px;
+  font-size: 6rem;
+  color: #2b2b2b;
+  text-align: left;
+}
+
+.futurContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: auto 100px;
+}
+
+.futurContainer__text {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.futurContainer__input {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.input__box {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border: solid 1px #c4c4c4;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.input__period {
+  width: 100px;
+}
+
+.input__interest {
+  width: 100px;
+}
+
+.futurContainer__subtitle {
+  margin-top: 100px;
+  font-size: 2.1rem;
+}
+
+.futurContainer__subtitle-span {
+  font-weight: bold;
+}
+
+.futurContainer__btn {
+  width: 650px;
+  height: 50px;
+  color: white;
+  background-image: linear-gradient(to right, #001aff 0%, #8f00ff 100%);
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 25%);
+  font-size: 2.1rem;
+  border: transparent;
+  border-radius: 10px;
+}
+
+.futurContainer__btn:hover {
+  background-image: linear-gradient(to left, #001aff 0%, #8f00ff 100%);
+  cursor: pointer;
+  box-shadow: none;
+}
