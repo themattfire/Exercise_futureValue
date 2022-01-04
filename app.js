@@ -13,17 +13,17 @@ function showResults() {
   const noPowFutureValue = parseInt(investment.value) * (1 + parseInt(interest.value))
   const futureValue = Math.pow(noPowFutureValue, parseInt(period.value))
   showFutureValue(futureValue)
-  if (investment.value === '' || period.value === '' || investment.value === '') {
+  if (investment.value === '' || period.value === '' || interest.value === '') {
     showAlert()
   }
+  cleanInput()
 }
 
 function showFutureValue(futureValue) {
   const renderResult = document.querySelector('.futurContainer__results')
   renderResult.textContent = 'Your interest is ' + futureValue
   setTimeout(() => {
-    renderResult.remove()
-    cleanInput()
+    renderResult.textContent = ''
   }, 3000)
 }
 
@@ -36,7 +36,4 @@ function cleanInput() {
 function showAlert() {
   const renderAlert = document.querySelector('.futurContainer__results')
   renderAlert.textContent = 'All fields are necessary'
-  setTimeout(() => {
-    renderAlert.remove()
-  }, 3000)
 }
